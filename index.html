@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="animation"></div>
+    <div class="mobile">
+       
+        
+        <nav id="navbar" style="z-index: 99999;">
+            <ul style="margin-top: 20px;">
+            <li> <a href="#hero"><li>Home</li></a></li>
+       <li> <a href="service.html"><li>Services</li></a></li>
+       <li> <a href="learning.html"><li>Learning</li></a></li>
+       <li><a href=""> <li>Contact</li></a></li>
+            </ul>
+
+          </nav>
+          <script>
+            function toggleNavbar() {
+  var navbar = document.getElementById("navbar");
+  if (navbar.style.left === "0px") {
+    navbar.style.left = "-200px";
+  } else {
+    navbar.style.left = "0px";
+  }
+}
+          </script>
+    </div>
+    <header class="header">
+      <div class="mobile-btn">
+         <button class="toggle-button" onclick="toggleNavbar()" style="background-color: rgb(16, 199, 86); 
+        position: absolute;top: 15px;right: 15px; ">≡</button>
+      </div>
+     <nav class="nav">
+       <h1>LAXMI</h1>
+      <ul class="header-list">
+        <a href="#hero"><li>Home</li></a>
+        <a href="service.html"><li>Services</li></a>
+        <a href="learning.html"><li>Learning</li></a>
+       <a href=""> <li>Contact</li></a>
+      </ul>
+     </nav>
+    </header>
+    <section class="hero" id="hero">
+      <div class="hero-content"><h1>Learn from the Best. Build A Trusted Website With us</h1>
+      <p>We offer the best</p>
+      </div>
+      
+    </section>
+   <div class="cta-buttons">
+                <a href="service.html" class="btn btn-primary">
+                    <span>Get Started</span>
+                </a>
+            </div>
+    <section class="features" id="features">
+      <div>
+        <h1 class="features-content">Our Services</h1>
+       <div class="features-grid">
+         <ul class="features-card">
+             <a href="learning.html" style="color: var(--text);"> <li class="li">Learning</li></a>
+              <a href="#" onclick="openModal()"><li class="li" style="color: var(--text);">Services</li></a>
+              <a href="#" onclick="openModal()" style="color: var(--text);"><li class="li">Become Our Staff</li></a>
+        </ul>
+       </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div>
+        <h1 class="about-content">About</h1>
+        <p>
+          Laxmi School Render A lot of services provided that it is Related to
+          digital skills.We are rated up to 80-90% accuracy
+        </p>
+      </div>
+      <div class="about-container">
+        <div class="about-item">
+          <div class="about-number">30K+</div>
+          <div class="about-label">Trusted</div>
+        </div>
+        <div class="about-item">
+          <div class="about-number">24/7</div>
+          <div class="about-label">Everyday</div>
+        </div>
+        <div class="about-item">
+          <div class="about-number">100%</div>
+          <div class="about-label">Reliability</div>
+        </div>
+      </div>
+    </section>
+     <section class="testimonials">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial">
+            <div class="testimonial-avatar">
+              <img src=" Vector (4).svg" alt="Testimonials-image" />
+            </div>
+            <div class="stars">⭐⭐⭐⭐</div>
+            <p>
+              “Best Website Creator”
+            </p>
+            <div class="testimonial-author">— Emeka T.</div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-avatar">
+              <img src=" Vector (4).svg" alt="Testimonials-image" />
+            </div>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              “Best To Buy your Domain”
+            </p>
+            <div class="testimonial-author">— Jasmine U.</div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-avatar">
+              <img src=" Vector (4).svg" alt="Testimonials-image" />
+            </div>
+            <div class="stars">⭐⭐⭐⭐</div>
+            <p>
+              “Interactive and Educative Classes”
+            </p>
+            <div class="testimonial-author">— Tolu M.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+     <div>Laxmi</div>
+     <span>All rights are reserved @2025</span>
+    </footer>
+   <div id="myModal" style="display:none; position:fixed; top:0; left:0; align-content: center; width:100%; height:100%; background:#0008; z-index: 99999;">
+  <div style="background:black; padding:20px; margin:35% auto; width:300px; position:relative;">
+    <span onclick="closeModal()" style="position:absolute; right:10px; cursor:pointer;">&times;</span>
+
+    <p>These service is currently unavailable!</p>
+  </div>
+</div>
+<script>
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  </script>
+  </body>
+</html> 

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning</title>
+    <style>
+      :root {
+        --primary: #6366f2;
+        --primary-dark: #4f46e5;
+        --secondary: #ec4899;
+        --dark: #0f172a;
+        --dark-light: #1e293b;
+        --text: #f8fafc;
+        --accent: #06b6d4;
+        --text-muted: #94a3b8;
+        --glass: rgba(255, 255, 255, 0.1);
+        --glass-border: rgba(255, 255, 255, 0.2);
+      }
+      body {
+        margin-top: 10rem;
+        background-color: var(--primary);
+        color: var(--text);
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      div p {
+        /* color: white; */
+        font-size: 18px;
+        /* font-weight: 300; */
+      }
+      .logo {
+        width: 50%;
+        height: 50%;
+        justify-self: center;
+      }
+      .primary {
+        background-color: var(--primary);
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        background-color: bisqu;
+        color: var(--text);
+        position: relative;
+        z-index: 1;
+      }
+      .primary:hover::before {
+        left: 0;
+      }
+      .primary:hover {
+        transform: 0.3s ease-out;
+        padding: 1.15rem 2.25rem;
+      }
+      @media (min-width: 700px) {
+        .div {
+          display: block;
+          width: 20%;
+          justify-self: center;
+          max-height: 60%;
+          min-height: 40%;
+          box-shadow: rgba(0, 0, 0, 0.1);
+          background-color: var(--dark-light);
+          padding: 10%;
+          margin-top: 1rem;
+          border-radius: 20px;
+        }
+      }
+      @media (max-width: 700px) {
+        .div {
+          display: block;
+          width: 50%;
+          justify-self: center;
+          max-height: 70%;
+          min-height: 40%;
+          box-shadow: rgba(0, 0, 0, 0.1);
+          background-color: var(--dark-light);
+          padding: 10%;
+          margin-bottom: 1rem;
+          border-radius: 20px;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="mobile">
+      <nav id="navbar" style="z-index: 99999">
+        <ul style="margin-top: 20px">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#features">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <script>
+        function toggleNavbar() {
+          var navbar = document.getElementById("navbar");
+          if (navbar.style.left === "0px") {
+            navbar.style.left = "-200px";
+          } else {
+            navbar.style.left = "0px";
+          }
+        }
+      </script>
+    </div>
+    <header class="header">
+      <div class="mobile-btn">
+        <button
+          class="toggle-button"
+          onclick="toggleNavbar()"
+          style="
+            background-color: rgb(16, 199, 86);
+            position: absolute;
+            top: 15px;
+            right: 15px;
+          "
+        >
+          ≡
+        </button>
+      </div>
+      <nav class="nav">
+        <h1>LAXMI</h1>
+        <ul class="header-list">
+          <a href="index.html"><li>Home</li></a>
+          <a href="service.html"><li>Services</li></a>
+          <a href="learning.html"><li>Learning</li></a>
+          <a href=""> <li>Contact</li></a>
+        </ul>
+      </nav>
+    </header>
+    <h2 style="text-align: center">Our Learning platforms</h2>
+    <div class="div">
+      <img
+        src="images (4).png"
+        alt="logo"
+        style="background-color: var(--accent); border-radius: 50%"
+        class="logo"
+      />
+      <p>Join Our Official Lerning Platform</p>
+      <a href="https://chat.whatsapp.com/LhZIVMBwRcH9Vxgl0fo6kR?mode=ac_t"><button class="primary">Join Now</button></a>
+    </div>
+    <div class="div">
+      <img
+        src="images (2).png"
+        alt="logo"
+        class="logo"
+        style="background-color: var(--accent); border-radius: 20%"
+      />
+      <p>Visit the Student Portal</p>
+      <a href="portallearn.html"
+        ><button class="primary">View Portal</button></a
+      >
+    </div>
+    <h2 style="text-align: center">Other Social Media Platforms</h2>
+    <div class="div">
+      <img src="whatsapp logo.png" alt="logo" class="logo" />
+      <p>Join Our Official whatsapp Channel</p>
+      <a href="https://whatsapp.com/channel/0029Vb6FnBOJUM2TrPUHRg0b"><button class="primary">Join Now</button></a>
+    </div>
+    <div class="div">
+      <img src="facebook.png" alt="logo" class="logo" />
+      <p>Follow Us On Our Official Facebook Page</p>
+      <a href=""><button class="primary">Join Now</button></a>
+    </div>
+    <div class="div">
+      <img src="whatsapp logo.png" alt="logo" class="logo" />
+      <p>Join Our Official Telegram Group</p>
+      <button class="primary">Join Now</button>
+    </div>
+    <div class="div">
+      <img
+        src="Instagram-icon.svg"
+        alt="logo"
+        class="logo"
+        style="background-color: var(--accent); border-radius: 10%"
+      />
+      <p>Join Our Official Instagram</p>
+      <button class="primary">Join Now</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Login</title>
+ <link rel="stylesheet" href="login.css">
+ <!-- <link rel="stylesheet" href="home.css"> -->
+  </head>
+ <body>
+  <div id="main" style="display: none;">
+    hello
+    <h2 id="welcome"></h2>
+    <h3>Here are some updates you might have missed while you were away</h3>
+    <div>
+        <h2>Tasks</h2>
+        <h3 id="tasks"></h3>
+    </div>
+</div>
+ <main id="" class="main" style="display: block;">
+ <div><h1 id="login-header">Log in </h1></div>
+
+  <p id="correct-msg">Log in succesful</p>
+  <p id="correct-admin">welcome admin</p>
+ 
+ <form id="login-form">
+   <input type="text" name="username" id="username-field" class="login-form-field" placeholder="username">
+  <input type="password" name="password" id="password-field" class="login-form-field" placeholder="password">
+ <button  id="show"><i class="fa fa-eye" aria-hidden="true">Show</i></button>
+   <input type="submit" style="margin-top: 5rem;" value="Login" id="login-form-submit">
+   <div id="error">
+    <p id="errorcontent">Invalid Credientials</p>
+   </div>
+ </form> 
+</main>
+
+
+<script src="login.js"></script>
+ 
+ </body>
+ </html>

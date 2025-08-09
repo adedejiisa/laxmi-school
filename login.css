@@ -1,0 +1,125 @@
+html {
+    height: 100%;
+    }
+    :root {
+  --primary: #6366f2;
+  --primary-dark: #4f46e5;
+  --secondary: #ec4899;
+  --dark: #0f172a;
+  --dark-light: #1e293b;
+  --text: #f8fafc;
+  --accent: #06b6d4;
+  --text-muted: #94a3b8;
+  --glass: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+   
+    body {
+        color: var(--text);
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color:var(--dark-light);
+    }
+   
+    #error {
+    width: 190%;
+    height: 100%;
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    }
+   
+    #errorcontent {
+    width: 23%;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    opacity: 0;
+    }
+    #login-header{
+        justify-self: center;
+     color: var(--accent);
+    }
+   
+       
+        #login-form{
+        align-self: flex-start;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        }
+        
+       
+        .login-form-field::placeholder {
+        color: #3a3a3a;
+        }
+       
+        .login-form-field {
+        border: none;
+        border-bottom: 1px solid #3a3a3a;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        outline: none;
+        padding: 0px 0px 5px 5px;
+        width: 190%;
+        height: 44px;
+        }
+       
+        #login-form-submit {
+        width: 120%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        background-color: var(--accent);
+        cursor: pointer;
+         outline: none;
+        }
+       #show{
+        border: none;
+       }
+          
+           #correct-msg {
+           width: 73%;
+           text-align: center;
+           margin: 0;
+           padding: 5px;
+           font-size: 12px;
+           font-weight: bold;
+           color: #008a35;
+           border: 1px solid #008a39;
+           background-color: #8fe5a4;
+           opacity: 0;
+           }
+           body{
+               font-family: Arial, Helvetica, sans-serif;
+           }
+           #correct-admin{
+             width: 23%;
+             text-align: center;
+             margin: 0;
+             padding: 5px;
+             font-size: 12px;
+             font-weight: bold;
+             color: #008a35;
+             border: 1px solid #008a39;
+             background-color: #8fe5a4;
+             opacity: 0;
+           }
+           @media(min-width:0px){
+            .task{
+                justify-self: center;
+                justify-content: center;
+                justify-items: center;
+            }
+           }
