@@ -16,7 +16,7 @@
             <li> <a href="#hero"><li>Home</li></a></li>
        <li> <a href="service.html"><li>Services</li></a></li>
        <li> <a href="learning.html"><li>Learning</li></a></li>
-       <li><a href=""> <li>Contact</li></a></li>
+       <li><a href="about2.html"> <li>About</li></a></li>
             </ul>
 
           </nav>
@@ -42,7 +42,7 @@
         <a href="#hero"><li>Home</li></a>
         <a href="service.html"><li>Services</li></a>
         <a href="learning.html"><li>Learning</li></a>
-       <a href=""> <li>Contact</li></a>
+       <a href="about2.html"> <li>About</li></a>
       </ul>
      </nav>
     </header>
@@ -73,8 +73,7 @@
       <div>
         <h1 class="about-content">About</h1>
         <p>
-          Laxmi School Render A lot of services provided that it is Related to
-          digital skills.We are rated up to 80-90% accuracy
+          Laxmi School  offers variety of services related to digital skills.We are rated up to 80-90% accuracy
         </p>
       </div>
       <div class="about-container">
@@ -93,41 +92,35 @@
       </div>
     </section>
      <section class="testimonials">
-      <div class="container">
-        <h2>Testimonials</h2>
-        <div class="testimonials-grid">
-          <div class="testimonial">
-            <div class="testimonial-avatar">
-              <img src=" Vector (4).svg" alt="Testimonials-image" />
-            </div>
-            <div class="stars">⭐⭐⭐⭐</div>
-            <p>
-              “Best Website Creator”
-            </p>
-            <div class="testimonial-author">— Emeka T.</div>
-          </div>
-          <div class="testimonial">
-            <div class="testimonial-avatar">
-              <img src=" Vector (4).svg" alt="Testimonials-image" />
-            </div>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p>
-              “Best To Buy your Domain”
-            </p>
-            <div class="testimonial-author">— Jasmine U.</div>
-          </div>
-          <div class="testimonial">
-            <div class="testimonial-avatar">
-              <img src=" Vector (4).svg" alt="Testimonials-image" />
-            </div>
-            <div class="stars">⭐⭐⭐⭐</div>
+       <div class="testimonial-carousel">
+      <div class="testimonial active">
+         <img src=" Vector (4).svg" alt="Testimonials-image" />
+        <div class="stars">⭐⭐⭐⭐⭐</div>
             <p>
               “Interactive and Educative Classes”
             </p>
-            <div class="testimonial-author">— Tolu M.</div>
-          </div>
-        </div>
+        <h4>-Tolu M</h4>
       </div>
+      <div class="testimonial">
+         <img src=" Vector (4).svg" alt="Testimonials-image" />
+        <div class="stars">⭐⭐⭐</div>
+            <p>
+             “Best To Buy your Domain”
+            </p>
+        <h4>-Jasmine U</h4>
+      </div>
+      <div class="testimonial">
+         <img src=" Vector (4).svg" alt="Testimonials-image" />
+        <div class="stars">⭐⭐⭐⭐</div>
+            <p>
+             “Best Website Creator”
+            </p>
+        <h4>-Emeka T</h4>
+      </div>
+      <button class="prev"> < </button>
+      <button class="next"> > </button>
+
+    </div>
     </section>
     <footer>
      <div>Laxmi</div>
@@ -147,6 +140,54 @@
   function closeModal() {
     document.getElementById("myModal").style.display = "none";
   }
-  </script>
+
+  //    const testimonials = document.querySelectorAll('.testimonial')
+  //  let current = 0
+  //  function showTestimonial(index){
+  //    testimonials.forEach(t => t.classList.remove('active'))
+  //    testimonials[index].classList.add('active')
+  //  }
+  //    document.querySelector('.next').addEventListener('click', ()=> {
+  //      current = (current + 1 ) % testimonials.length
+  //      showTestimonial(current)
+  //    })
+  //    document.querySelector('.prev').addEventListener('click', () => {
+  //      current =(current - 1 + testimonials.length)%
+  //      testimonials.length
+  //      showTestimonial(current)
+  //    })
+  const testimonials = document.querySelectorAll('.testimonial');
+const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.prev');
+let currentIndex = 0;
+
+// Show the current testimonial
+function updateTestimonial(index) {
+  testimonials.forEach((item, i) => {
+    item.classList.toggle('active', i === index);
+  });
+}
+
+// Handle next button
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % testimonials.length;
+  updateTestimonial(currentIndex);
+});
+
+// Handle previous button
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+  updateTestimonial(currentIndex);
+});
+
+// Optional: Auto-slide every 5 seconds
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % testimonials.length;
+  updateTestimonial(currentIndex);
+}, 5000);
+
+// Initialize
+updateTestimonial(currentIndex);
+  </script>  
   </body>
 </html> 
