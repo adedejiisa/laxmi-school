@@ -5,6 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="home.css" />
+    <style>
+       .testimonial-carousel{
+        position: relative;
+        width: 60%;
+        max-width: 70%;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+        overflow: hidden;
+        background: linear-gradient(135deg, var(--accent), var(--primary));
+        border-radius: 10px;
+        box-shadow:  0 4px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+      }
+      .testimonial{
+        display: none;
+        transition: opacity 0.5s;
+      }
+      .testimonial.active{
+        display: block;
+      }
+      .testimonial p{
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        color:var(--text);
+      }
+      .testimonial h4{
+        font-weight: normal;
+        color: var(--dark);
+      }
+      .prev ,.next{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--primary);
+        border: none;
+        font-size: 1.5rem;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+      .prev{
+        left: 10px;
+      }
+      .next{
+        right: 10px;
+        background: var(--primary-dark);
+      }
+    </style>
   </head>
   <body>
     <div class="animation"></div>
@@ -191,3 +240,4 @@ updateTestimonial(currentIndex);
   </script>  
   </body>
 </html> 
+
