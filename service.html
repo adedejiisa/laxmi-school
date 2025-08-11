@@ -63,6 +63,50 @@
         font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
           "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       }
+      .testimonial-carousel{
+        position: relative;
+        width: 80%;
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow:  0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+      .testimonial{
+        display: none;
+        transition: opacity 0.5s;
+      }
+      .testimonial-active{
+        display: block;
+      }
+      .testimonial p{
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+      }
+      .testimonial h4{
+        font-weight: normal;
+        color: #666;
+      }
+      .prev ,.next{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #eee;
+        border: none;
+        font-size: 1.5rem;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+      .prev{
+        left: 10px;
+      }
+      .next{
+        right: 10px;
+      }
     </style>
   </head>
   <body>
@@ -72,7 +116,7 @@
           <a href="index.html"><li>Home</li></a>
           <a href="service.html"><li>Services</li></a>
           <a href="learning.html"><li>Learning</li></a>
-          <a href=""> <li>Contact</li></a>
+          <a href="about2.html"> <li>About</li></a>
         </ul>
       </nav>
       <script>
@@ -107,7 +151,7 @@
           <a href="index.html"><li>Home</li></a>
           <a href="service.html"><li>Services</li></a>
           <a href="learning.html"><li>Learning</li></a>
-          <a href=""> <li>Contact</li></a>
+          <a href="about2.html"> <li>About</li></a>
         </ul>
       </nav>
     </header>
