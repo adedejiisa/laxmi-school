@@ -5,20 +5,153 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Login</title>
  <link rel="stylesheet" href="login.css">
+ <style>
+    body {
+  font-family: Arial, sans-serif;
+  /* background: #f5f6fa; */
+  margin: 0;
+  padding: 0;
+  color: black;
+  height: 100%;
+  overflow: hidden;
+}
+ :root{
+    --primary: #6366f2;
+  --primary-dark: #4f46e5;
+  --secondary: #ec4899;
+  --dark: #0f172a;
+  --dark-light: #1e293b;
+  --text: #f8fafc;
+  --accent: #06b6d4;
+  --text-muted: #94a3b8;
+  --glass: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+
+ }
+.sidebar {
+  font-size: 24px;
+  padding: 10px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+.refresh{
+    position: absolute;
+    top: 2%;
+    right: 0%;
+    border: none;
+    background-color: inherit;
+}
+
+.container {
+  padding: 20px;
+  width: 70%;
+  /* float: right; */
+  padding-left: 25%;
+}
+
+header h2 span {
+  color: #333;
+  font-weight: bold;
+}
+
+.card {
+  background: var(--accent);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.progress {
+  margin-bottom: 15px;
+}
+
+.progress p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.bar {
+  background: #ddd;
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.bar div {
+  background: var(--primary);
+  height: 100%;
+}
+  img{
+    /* position: absolute; */
+    top: 2%;
+    right: 4%;
+    width: 17%;
+    height: 5%;
+    padding: none;
+}
+.calendar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.profile{
+    top:10%;
+    width: 50%;
+    position: absolute;
+    right: 2%;
+    /* margin-left: 10px; */
+    padding-left: 2px;
+    display: none;
+    background-color: white;
+    /* height: 100%; */
+    z-index: 99999;
+
+}
+header h2, header p{
+    color: white;
+}
+.cert{
+    border-radius: 20px;
+    width: 70%;
+    border: none;
+    padding: 15px;
+    background-color: var(--primary);
+    margin-top: 5px;
+    margin-left: 15%;
+}
+.profpicx{
+   margin-left: 41.5%;
+   margin-top: 5px;
+}
+.logout{
+    width: 40%;
+    background-color: inherit;
+    border: none;
+    margin-left: 30%;
+}
+  </style>
  <!-- <link rel="stylesheet" href="home.css"> -->
   </head>
  <body>
-  <div id="main" style="display: none;">
-    hello
-    <h2 id="welcome"></h2>
-    <h3>Here are some updates you might have missed while you were away</h3>
-    <div>
-        <h2>Tasks</h2>
-        <h3 id="tasks"></h3>
-    </div>
-</div>
- <main id="" class="main" style="display: block;">
- <div><h1 id="login-header">Log in </h1></div>
+  <div id="first" style="display: none;"></div>
+  <div id="second" style="display: none;"></div>
+  <div id="third" style="display: none;"></div>
+  <div id="fourth" style="display: none;"></div>
+
+
+ <main id="main" class="main" style="display: block;">
+ <div><h1 id="login-header">Log in to the Portal  </h1></div>
 
   <p id="correct-msg">Log in succesful</p>
   <p id="correct-admin">welcome admin</p>
