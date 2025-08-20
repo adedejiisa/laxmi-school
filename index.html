@@ -1,307 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Laxmi School</title>
-  <link rel="stylesheet" href="home.css" />
-  <style>
-  ::roo{
-    --primary: #d4af37;
-  --primary-dark: #b38e2e;
-  --accent: #fffaf0;
-  --text: #ffffff;
-  --background: #ffffff;
-  --shadow: rgba(0, 0, 0, 0.1);
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="animation"></div>
+    <div class="mobile">
+       
+        
+        <nav id="navbar" style="z-index: 99999;">
+            <ul style="margin-top: 20px;">
+            <li> <a href="#hero"><li>Home</li></a></li>
+       <li> <a href="service.html"><li>Services</li></a></li>
+       <li> <a href="learning.html"><li>Learning</li></a></li>
+       <li><a href="about2.html"> <li>About</li></a></li>
+            </ul>
+
+          </nav>
+          <script>
+            function toggleNavbar() {
+  var navbar = document.getElementById("navbar");
+  if (navbar.style.left === "0px") {
+    navbar.style.left = "-200px";
+  } else {
+    navbar.style.left = "0px";
+  }
 }
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: var(--background);
-  color: var(--primary-dark);
-}
-
-/* Header */
-.header {
-  background-color: var(--primary);
-  color: var(--text);
-  padding: 1rem;
-  position: relative;
-}
-
-.toggle-button {
-  background-color: var(--primary-dark);
-  color: var(--text);
-  border: none;
-  font-size: 1.5rem;
-  padding: 8px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-
-.nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.nav h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.header-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.header-list li a {
-  color: var(--text);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.header-list li a:hover {
-  text-decoration: underline;
-}
-
-/* Hero */
-.hero {
-  background: linear-gradient(135deg, var(--accent), var(--primary));
-  padding: 3rem 1rem;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.cta-buttons {
-  margin-top: 1rem;
-}
-
-.btn-primary {
-  background-color: var(--primary-dark);
-  color: var(--text);
-  padding: 12px 24px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 4px 8px var(--shadow);
-}
-
-.btn-primary:hover {
-  background-color: var(--primary);
-}
-
-/* Features */
-.features {
-  background-color: var(--accent);
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-.features-content {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.features-card {
-  list-style: none;
-  padding: 0;
-}
-
-.features-card li {
-  background-color: var(--primary);
-  color: var(--text);
-  padding: 10px 20px;
-  margin: 8px 0;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* About */
-.about {
-  background-color: var(--accent);
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-.about-content {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.about-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-}
-
-.about-item {
-  text-align: center;
-  margin: 10px;
-}
-
-.about-number {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--primary);
-}
-
-.about-label {
-  font-size: 1rem;
-  color⁽¹⁾
-
-  </style>
-</head>
-<body>
-
-  <header class="header">
-    <div class="mobile-btn">
-      <button class="toggle-button" onclick="toggleNavbar()">≡</button>
+          </script>
     </div>
-    <nav class="nav" id="navbar">
-      <h1>LAXMI</h1>
+    <header class="header">
+      <div class="mobile-btn">
+         <button class="toggle-button" onclick="toggleNavbar()" style="background-color: rgb(16, 199, 86); 
+        position: absolute;top: 15px;right: 15px; ">≡</button>
+      </div>
+     <nav class="nav">
+       <h1>LAXMI</h1>
       <ul class="header-list">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="service.html">Services</a></li>
-        <li><a href="learning.html">Learning</a></li>
-        <li><a href="about2.html">About</a></li>
+        <a href="#hero"><li>Home</li></a>
+        <a href="service.html"><li>Services</li></a>
+        <a href="learning.html"><li>Learning</li></a>
+       <a href="about2.html"> <li>About</li></a>
       </ul>
-    </nav>
-  </header>
-
-  <section class="hero" id="hero">
-    <div class="hero-content">
-      <h1>Learn from the Best. Build A Trusted Website With Us</h1>
+     </nav>
+    </header>
+    <section class="hero" id="hero">
+      <div class="hero-content"><h1>Learn from the Best. Build A Trusted Website With us</h1>
       <p>We offer the best</p>
-      <div class="cta-buttons">
-        <a href="service.html" class="btn btn-primary">Get Started</a>
       </div>
-    </div>
-  </section>
-
-  <section class="features" id="features">
-    <h1 class="features-content">Our Services</h1>
-    <ul class="features-card">
-      <li><a href="learning.html">Learning</a></li>
-      <li><a href="#" onclick="openModal()">Services</a></li>
-      <li><a href="#" onclick="openModal()">Become Our Staff</a></li>
-    </ul>
-  </section>
-
-  <section class="about" id="about">
-    <h1 class="about-content">About</h1>
-    <p>Laxmi School offers a variety of services related to digital skills. We are rated up to 80–90% accuracy.</p>
-    <div class="about-container">
-      <div class="about-item">
-        <div class="about-number">30K+</div>
-        <div class="about-label">Trusted</div>
+      
+    </section>
+   <div class="cta-buttons">
+                <a href="service.html" class="btn btn-primary">
+                    <span>Get Started</span>
+                </a>
+            </div>
+    <section class="features" id="features">
+      <div>
+        <h1 class="features-content">Our Services</h1>
+       <div class="features-grid">
+         <ul class="features-card">
+             <a href="learning.html" style="color: var(--text);"> <li class="li">Learning</li></a>
+              <a href="#" onclick="openModal()"><li class="li" style="color: var(--text);">Services</li></a>
+              <a href="#" onclick="openModal()" style="color: var(--text);"><li class="li">Become Our Staff</li></a>
+        </ul>
+       </div>
       </div>
-      <div class="about-item">
-        <div class="about-number">24/7</div>
-        <div class="about-label">Everyday</div>
+    </section>
+    <section class="about" id="about">
+      <div>
+        <h1 class="about-content">About</h1>
+        <p>
+          Laxmi School  offers variety of services related to digital skills.We are rated up to 80-90% accuracy
+        </p>
       </div>
-      <div class="about-item">
-        <div class="about-number">100%</div>
-        <div class="about-label">Reliability</div>
+      <div class="about-container">
+        <div class="about-item">
+          <div class="about-number">30K+</div>
+          <div class="about-label">Trusted</div>
+        </div>
+        <div class="about-item">
+          <div class="about-number">24/7</div>
+          <div class="about-label">Everyday</div>
+        </div>
+        <div class="about-item">
+          <div class="about-number">100%</div>
+          <div class="about-label">Reliability</div>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <section class="testimonials">
-    <div class="testimonial-carousel">
+    </section>
+     <section class="testimonials">
+       <div class="testimonial-carousel">
       <div class="testimonial active">
-        <img src="Vector (4).svg" alt="Testimonial" />
+         <img src=" Vector (4).svg" alt="Testimonials-image" />
         <div class="stars">⭐⭐⭐⭐⭐</div>
-        <p>“Interactive and Educative Classes”</p>
-        <h4>- Tolu M</h4>
+            <p>
+              “Interactive and Educative Classes”
+            </p>
+        <h4>-Tolu M</h4>
       </div>
       <div class="testimonial">
-        <img src="Vector (4).svg" alt="Testimonial" />
+         <img src=" Vector (4).svg" alt="Testimonials-image" />
         <div class="stars">⭐⭐⭐</div>
-        <p>“Best To Buy your Domain”</p>
-        <h4>- Jasmine U</h4>
+            <p>
+             “Best To Buy your Domain”
+            </p>
+        <h4>-Jasmine U</h4>
       </div>
       <div class="testimonial">
-        <img src="Vector (4).svg" alt="Testimonial" />
+         <img src=" Vector (4).svg" alt="Testimonials-image" />
         <div class="stars">⭐⭐⭐⭐</div>
-        <p>“Best Website Creator”</p>
-        <h4>- Emeka T</h4>
+            <p>
+             “Best Website Creator”
+            </p>
+        <h4>-Emeka T</h4>
       </div>
-      <button class="prev">‹</button>
-      <button class="next">›</button>
-    </div>
-  </section>
+      <button class="prev"> < </button>
+      <button class="next"> > </button>
 
-  <footer>
-    <div>Laxmi</div>
-    <span>All rights reserved ©2025</span>
-  </footer>
-
-  <div id="myModal">
-    <div>
-      <span onclick="closeModal()">×</span>
-      <p>This service is currently unavailable!</p>
     </div>
+    </section>
+    <footer>
+     <div>Laxmi</div>
+     <span>All rights are reserved @2025</span>
+    </footer>
+   <div id="myModal" style="display:none; position:fixed; top:0; left:0; align-content: center; width:100%; height:100%; background:#0008; z-index: 99999;">
+  <div style="background:black; padding:20px; margin:35% auto; width:300px; position:relative;">
+    <span onclick="closeModal()" style="position:absolute; right:10px; cursor:pointer;">&times;</span>
+
+    <p>These service is currently unavailable!</p>
   </div>
+</div>
+<script>
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
 
-  <script>
-    function toggleNavbar() {
-      const navbar = document.getElementById("navbar");
-      navbar.classList.toggle("open");
+  //    const testimonials = document.querySelectorAll('.testimonial')
+  //  let current = 0
+  //  function showTestimonial(index){
+  //    testimonials.forEach(t => t.classList.remove('active'))
+  //    testimonials[index].classList.add('active')
+  //  }
+  //    document.querySelector('.next').addEventListener('click', ()=> {
+  //      current = (current + 1 ) % testimonials.length
+  //      showTestimonial(current)
+  //    })
+  //    document.querySelector('.prev').addEventListener('click', () => {
+  //      current =(current - 1 + testimonials.length)%
+  //      testimonials.length
+  //      showTestimonial(current)
+  //    })
+  const testimonials = document.querySelectorAll('.testimonial');
+const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.prev');
+let currentIndex = 0;
+
+// Show the current testimonial
+function updateTestimonial(index) {
+  testimonials.forEach((item, i) => {
+    item.classList.toggle('active', i === index);
+  });
 }
 
-    function openModal() {
-      document.getElementById("myModal").style.display = "block";
-}
-
-    function closeModal() {
-      document.getElementById("myModal").style.display = "none";
-}
-
-    const testimonials = document.querySelectorAll('.testimonial');
-    const nextBtn = document.querySelector('.next');
-    const prevBtn = document.querySelector('.prev');
-    let currentIndex = 0;
-
-    function updateTestimonial(index) {
-      testimonials.forEach((item, i) => {
-[8/21, 12:20 AM] Microsoft Copilot: item.classList.toggle('active', i === index);
+// Handle next button
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % testimonials.length;
+  updateTestimonial(currentIndex);
 });
-}
 
-    nextBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % testimonials.length;
-      updateTestimonial(currentIndex);
+// Handle previous button
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+  updateTestimonial(currentIndex);
 });
 
-    prevBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-      updateTestimonial(currentIndex);
-});
-
-    setInterval(() => {
-      currentIndex = (currentIndex + 1) % testimonials.length;
-      updateTestimonial(currentIndex);
+// Optional: Auto-slide every 5 seconds
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % testimonials.length;
+  updateTestimonial(currentIndex);
 }, 5000);
 
-    updateTestimonial(currentIndex);
-  </script>
-</body>
-</html>
-
-
+// Initialize
+updateTestimonial(currentIndex);
+  </script>  
+  </body>
+</html> 
